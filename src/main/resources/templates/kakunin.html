@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+</head>
+<body>
+<div class="container text-center my-5">
+		
+		<h3>商品登録</h3>
+		<h4>以下の商品を登録します。よろしいですか？</h4>
+
+       <form th:action="@{/register_product}" method="post">
+			 <table style="width:80%" border="0">
+			<tr>
+                <td>
+                    <label for="id">ID :</label><br>
+                </td>
+                <td>AA
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name">商品名</label><br>
+                </td>
+                <td>AA
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="price">価格</label><br>
+                </td>
+                <td>AA円
+                </td>
+            </tr>
+            <tr>
+				<td style="text-align: center;"><input type='submit' value='登録' />
+				<input onclick='javascript:window.history.back()' value='戻る' type='button' />	
+				</td>
+				
+			</tr> 
+          </table> 
+		</form>      
+	 
+</div>
+</body>
+</html>
